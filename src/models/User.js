@@ -5,8 +5,7 @@ const User = sequelize.define('user', {
     // Definimos las columnas aquí
     first_name: {
         type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
+        allowNull: false
     },
     last_name: {
         type: DataTypes.STRING,

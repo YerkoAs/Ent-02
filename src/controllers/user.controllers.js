@@ -30,7 +30,7 @@ const eliminate = catchError(async(req,res)=>{
     const { id } = req.params
     const result = await User.destroy({where:{id}})
     if(!result) return res.sendStatus(404)
-    return res.status(200)
+    return res.sendStatus(200)
 })
 
 module.exports = {
